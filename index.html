@@ -1,7 +1,57 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>알바톡 - 나만의 알바 리스트를 만들어보세요!</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="icon" type="image/x-icon" href="albatalklogo.ico">
 </head>
 <body>
-<h1>테스트</h1>
+    <div class="navbar" id="home"> <!--네비게이션 바-->
+        <ul id="navbarul">
+            <li><a href="#home"><div class="logoimg"></div></a></li>
+            <li><a href="#about"><p>서비스 소개</p></a></li>
+            <li><a href="#howtouse"><p>사용 방법</p></a></li>
+            <li><a href="#FAQ"><p>자주 묻는 질문</p></a></li>
+            <li><a href="#teaminfo"><p>만든 사람들</p></a></li>
+        </ul>
+    </div>
+
+    <div class="mainbox"> <!--상단 회색 네모-->
+        <h1>알바톡을 소개합니다!</h1>
+        <p>알바톡으로 아르바이트 정보를 카카오톡으로 나에게 전송해보세요!</p>
+        <p>나만의 알바 정보 리스트가 완성됩니다.</p>
+        <p>알바톡은 크롬(Chrome) 확장프로그램입니다.</p>
+        <img class="screenshotimg" src="albatalk_screenshot.png" alt="알바톡 실행 화면 이미지">
+    </div>
+
+    <div class="container"> <!--회색 네모 아래, 내용이 들어가는 공간-->
+
+        <div class="about" id="about">
+            <h1>#서비스 소개</h1>
+        </div>
+
+        <div class="square"></div>
+
+        <div class="howtouse" id="howtouse">
+            <h1>#사용 방법</h1>
+        </div>
+
+        <div class="FAQ" id="FAQ">
+            <h1>#자주 묻는 질문</h1>
+        </div>
+
+        <div class="teaminfo" id="teaminfo">
+            <h1>#만든 사람들</h1>
+            <div class="textcontainer">
+                <p>블라블라 어쩌구저쩌구</p>
+            </div>
+        </div>
+
+    </div>
+
+    
 </body>
 </html>
