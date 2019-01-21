@@ -1,0 +1,110 @@
+html {
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  ul{
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .navbar{
+      width: 100%;
+      height: 60px;
+      background-color: #FFFFFF;
+  }
+
+  #navbarul {
+    padding: 2px 15px;
+    margin: 0 0;
+  }
+
+  #navbarul li {
+    float: left;
+    margin: 3px 25px 0 0;
+  }
+
+  #navbarul a{
+    color: #353646;
+    font-size: 1.3em;
+    text-shadow: 0 0 0.5px #b3b3b3;
+  }
+
+  #navbarul p{
+      margin: 14px 0 0 0;
+  }
+
+  .logoimg{
+      width: 51px;
+      height: 50px;
+      background-image: url("albatalklogo.png");
+  }
+
+  .mainbox {
+      width: 100%;
+      height: 350px;
+      background-color: #DCDCDC;
+  }
+
+  .mainbox h1{
+      font-size: 300%;
+      color: #353646;
+      margin: 0;
+      padding: 60px 0 60px 60px;
+  }
+
+  .mainbox p{
+      font-size: 1.1em;
+      margin: 0;
+      padding: 0 0 6px 60px;
+  }
+
+  .screenshotimg{
+      position: absolute;
+      right: 60px;
+      top: 70px;
+      width: 290px;
+      height: 330px;
+  }
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    height: 100%;
+    background-color: #FFFFFF;
+    position: relative;
+  }
+
+  .textcontainer{
+      background-color: #DCDCDC;
+      width: 80%;
+      height: auto;
+      margin: auto;
+  }
+
+  .square {
+      width: 100px;
+      height: 700px;
+      background-color: #B121FA;
+  }
+
+
+  @media screen  and (max-width:559px) {    /* 미디어쿼리 영역 페이지 크기가 570px 이하일 때 */
+  
+    .square {
+        background-color: #B1FF22;
+    }
+}
