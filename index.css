@@ -87,7 +87,7 @@ html {
     margin-right: auto;
     max-width: 880px;
     height: 100%;
-    background-color: #dcdcdc;
+    background-color: #ffffff;
     padding: 15px 20px;
   }
 
@@ -99,11 +99,22 @@ html {
       background-color: #FFFFFF;
       width: 85%;
       height: auto;
-      margin: auto;
+      margin: 15px auto 50px auto;
   }
   
   .textcontainer p{
       margin: 0 0 6px 0;
+  }
+
+  .profileimg{
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+  }
+
+  .profileimg img{
+      max-width: 100px;
+      border-radius: 50px;
   }
 
   .square {
