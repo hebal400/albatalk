@@ -87,8 +87,13 @@ html {
     margin-right: auto;
     max-width: 880px;
     height: 100%;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     padding: 15px 20px;
+  }
+
+  .about{
+      background-color: #FFFFFF;
+
   }
 
   .container h1{
@@ -104,6 +109,90 @@ html {
   
   .textcontainer p{
       margin: 0 0 6px 0;
+  }
+
+
+
+  .howtouse{
+      width: 100%;
+      height: 2000px;
+      background-color: rgb(194, 60, 60);
+  }
+
+  
+
+  .howtouseleft{
+      float: left;
+      width: 50%;
+      height: 180px;
+      background-color: rgb(87, 180, 92);
+      margin: 0 auto;
+  }
+
+  .howtouseleft h2{
+      margin: 15px 30px 30px 15px;
+  }
+
+  .howtouseleft .textcontainer{
+      margin: 0 50px;
+  }
+
+  .howtouseright{
+      float: left;
+      width: 50%;
+      height: 170px; /* .howtouseleft의 height보다 10px 작아야함. padding 때문에*/
+      background-color: rgb(93, 116, 223);
+      margin: 0 auto;
+      text-align: center;
+      padding: 10px 0 0 0;
+  }
+
+  .howtouseright #thirddiv{
+      margin: 0 auto;
+      width: 322px;
+      height: 500px;
+      box-shadow: 0.5px 0.5px 2px 1px #BBBBBB;
+      border-radius: 2px
+  }
+
+  #thirdleft{
+      height: 550px;
+  }
+
+  #thirdright{
+      height: 540px;
+  }
+
+  #fourthleft{
+      height: 760px;
+  }
+
+  #fourthright{
+      height: 750px;
+  }
+
+  #fourthdiv{
+      width: 380px;
+      height: 740px;
+      margin: 0 auto;
+      box-shadow: 0.5px 0.5px 2px 1px #BBBBBB;
+      border-radius: 3px
+  }
+
+
+
+  .FAQ{
+      width: 100%;
+      height: 300px;
+      background-color: #FFFFFF;
+  }
+
+
+
+  .teaminfo{
+      width: 100%;
+      height: 300px;
+      background-color: #FFFFFF;
   }
 
   .teaminfoul{
@@ -132,6 +221,11 @@ html {
       background-color: #B121FA;
   }
 
+  footer{
+      width: 100%;
+      height: 150px;
+      background-color: #353646;
+  }
 
   @media screen  and (max-width:559px) {    /* 미디어쿼리 영역 페이지 크기가 570px 이하일 때 */
   
