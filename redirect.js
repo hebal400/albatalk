@@ -21,7 +21,7 @@ function getRedirectionURI(key) {
  * @uri: string
  * return boolean
  * 파라미터로 들어온 uri의 값의 valid를 체크합니다.
- * 
+ *
  * 현재 미구현 상태
  */
 function checkValidURI(uri) {
@@ -36,7 +36,18 @@ function redirect() {
 
     if(checkValidURI(redirect_uri)) {
         window.location.href = redirect_uri;
-    }    
+    }
+}
+
+var waitSecond = 3;
+
+function secondCount() {
+  var second = document.querySelector('.second');
+
+  second.innerHTML = waitSecond;
+  waitSecond--;
 }
 
 redirect();
+setTimeout(redirect, 3000);
+setTimeout(secondCount, 1000);
