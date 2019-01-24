@@ -10,8 +10,9 @@ function getRedirectionURI(key) {
 
 
     let defaultURI = 'https://hebal400.github.io';
-    let redirectionURI = urlParams.has(key) ? urlParams.get(key) : defaultURI;
+    let redirectionURI = urlParams.has(key) ? decodeURIComponent(urlParams.get(key)) : defaultURI;
 
+    alert(`주소는 ${redirectionURI}`)
     return redirectionURI;
 }
 
@@ -37,3 +38,5 @@ function redirect() {
         window.location.href = redirect_uri;
     }    
 }
+
+redirect();
