@@ -40,19 +40,16 @@ function redirect() {
 }
 
 var waitSecond = 3;
-for (var i = 0; i < 3; i++) {
-  var second = document.querySelector('.second');
 
-  second.innerHTML = waitSecond;
-  waitSecond--;
-}
 function secondCount() {
-  // var second = document.querySelector('.second');
-  //
-  // second.innerHTML = waitSecond;
-  // waitSecond--;
+  for (var i = 0; i < 3; i++) {
+    var second = document.querySelector('.second');
+
+    second.innerHTML = waitSecond;
+    waitSecond--;
+  }
 }
 
 redirect();
 setTimeout(redirect, 3000);
-// setTimeout(secondCount, 1000);
+secondCount();
