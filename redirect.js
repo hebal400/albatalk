@@ -40,14 +40,19 @@ function redirect() {
 }
 
 var waitSecond = 3;
-
-function secondCount() {
+for (var i = 0; i < 3; i++) {
   var second = document.querySelector('.second');
 
   second.innerHTML = waitSecond;
   waitSecond--;
 }
+function secondCount() {
+  // var second = document.querySelector('.second');
+  //
+  // second.innerHTML = waitSecond;
+  // waitSecond--;
+}
 
 redirect();
 setTimeout(redirect, 3000);
-setTimeout(secondCount, 1000);
+// setTimeout(secondCount, 1000);
