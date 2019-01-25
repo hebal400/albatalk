@@ -39,17 +39,19 @@ function redirect() {
     }
 }
 
-var waitSecond = 3;
+var SetTime = 3;
 
-function secondCount() {
-  for (var i = 0; i < 3; i++) {
-    var second = document.querySelector('.second');
+function msg_time() {
+  remain = Math.floor(SetTime % 60) + "초";
 
-    second.innerHTML = waitSecond;
-    waitSecond--;
-  }
+	var msg = `현재 남은 시간은 ${remain}초 입니다.`;
+
+	document.querySelector('.reLoading').innerHTML = msg;
+  SetTime--;
+  if (SetTime < 0) {
+    clearInterval(setInterval(msg_time,1000));
+	}
 }
 
 redirect();
 setTimeout(redirect, 3000);
-secondCount();
