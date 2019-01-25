@@ -46,7 +46,7 @@ function msg_time() {
   remain = Math.floor(SetTime % 60) + "초";
   reLoading.style.fontSize = 'large';
 
-	var msg = `현재 남은 시간은 <font color="red"> ${remain}</font> 입니다.`;
+	var msg = `현재 남은 시간은 &nbsp<font color="red">${remain}</font> 입니다.`;
 
 	reLoading.innerHTML = msg;
   SetTime--;
