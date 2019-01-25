@@ -48,11 +48,11 @@ function msg_time() {
 
 	document.querySelector('.reLoading').innerHTML = msg;
   SetTime--;
-  if (SetTime = 0) {
+  if (SetTime < 0) {
     redirect();
 	}
 }
 
 // redirect();
-// msg_time();
+msg_time();
 // setTimeout(redirect, 3000);
