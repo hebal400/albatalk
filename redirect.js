@@ -40,13 +40,16 @@ function redirect() {
 }
 
 var SetTime = 3;
+var reLoading = document.querySelector('.reLoading');
 
 function msg_time() {
-  remain = Math.floor(SetTime % 60);
+  remain = Math.floor(SetTime % 60) + "초";
+  remain.style.color = 'red';
+  reLoading.style.fontSize = 'x-large';
 
-	var msg = `현재 남은 시간은 ${remain}초 입니다.`;
+	var msg = `현재 남은 시간은 ${remain} 입니다.`;
 
-	document.querySelector('.reLoading').innerHTML = msg;
+	reLoading.innerHTML = msg;
   SetTime--;
   if (SetTime < 0) {
     clearInterval(tid);
