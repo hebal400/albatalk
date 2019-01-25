@@ -44,10 +44,9 @@ var reLoading = document.querySelector('.reLoading');
 
 function msg_time() {
   remain = Math.floor(SetTime % 60) + "초";
-  remain.style.color = 'red';
   reLoading.style.fontSize = 'x-large';
 
-	var msg = `현재 남은 시간은 ${remain} 입니다.`;
+	var msg = `현재 남은 시간은 <font color="red">${remain}</font> 입니다.`;
 
 	reLoading.innerHTML = msg;
   SetTime--;
