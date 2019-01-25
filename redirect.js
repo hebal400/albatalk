@@ -42,17 +42,17 @@ function redirect() {
 var SetTime = 3;
 
 function msg_time() {
-  remain = Math.floor(SetTime % 60) + "초";
+  remain = Math.floor(SetTime % 60);
 
 	var msg = `현재 남은 시간은 ${remain}초 입니다.`;
 
 	document.querySelector('.reLoading').innerHTML = msg;
   SetTime--;
-  if (SetTime < 0) {
-    clearInterval(setInterval(msg_time,1000));
+  if (SetTime = 0) {
+    redirect();
 	}
 }
 
-redirect();
-msg_time();
-setTimeout(redirect, 3000);
+// redirect();
+// msg_time();
+// setTimeout(redirect, 3000);
