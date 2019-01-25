@@ -54,4 +54,5 @@ function msg_time() {
 }
 
 redirect();
+msg_time();
 setTimeout(redirect, 3000);
