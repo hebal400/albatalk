@@ -49,9 +49,12 @@ function msg_time() {
 	document.querySelector('.reLoading').innerHTML = msg;
   SetTime--;
   if (SetTime < 0) {
+    clearInterval(tid);
     redirect();
 	}
 }
+
+var tid = setInterval(msg_time, 1000);
 
 // redirect();
 msg_time();
