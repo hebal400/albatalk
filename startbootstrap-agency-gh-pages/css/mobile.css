@@ -1,0 +1,13 @@
+@media (min-width: 0px) and (max-width: 767px) {
+  #mainNav .navbar-toggler {
+    background-color: #353645;
+  }
+
+  .mainbox {
+    font-size: 15px;
+  }
+
+  .mainbox > h1 {
+    font-size: 20px;
+  }
+}

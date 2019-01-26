@@ -1,8 +1,3 @@
-/*!
- * Start Bootstrap - Agency v5.0.3 (https://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2018 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
- */
 body {
    overflow-x:hidden;
    font-family:'Roboto Slab',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
@@ -12,18 +7,6 @@ p {
   line-height:1.75;
 }
 
-a {
-  color:#fed136;
-}
-
-a:hover {
-  color:#fec503;
-}
-
-.text-primary {
-  color:#fed136!important;
-}
-
 h1,h2,h3,h4,h5,h6 {
   font-weight:700;
   font-family:Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
@@ -31,6 +14,7 @@ h1,h2,h3,h4,h5,h6 {
 
 section {
   padding:100px 0;
+  padding-bottom: 150px;
 }
 
 section h2.section-heading {
@@ -46,12 +30,6 @@ section h3.section-subheading {
   margin-bottom:75px;
   text-transform:none;
   font-family:'Droid Serif',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-}
-
-@media (min-width:768px){
-  section {
-    padding:150px 0;
-  }
 }
 
 .btn {
@@ -114,7 +92,7 @@ img::-moz-selection {
   text-transform:uppercase;
   color:#fff;
   border:0;
-  background-color:#fed136;
+  background-color:#353645;
   font-family:Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
 }
 
@@ -141,38 +119,17 @@ img::-moz-selection {
   font-weight: bold;
 }
 
-@media (min-width:992px){
-  #mainNav {
-    -webkit-transition:padding-top .3s,padding-bottom .3s;transition:padding-top .3s,padding-bottom .3s;
-    border:none;
-    background-color:transparent;
-  }
-
-  #mainNav .navbar-brand {
-    font-size:1.75em;
-    -webkit-transition:all .3s;transition:all .3s;
-  }
-
-  #mainNav .navbar-nav .nav-item .nav-link {
-    padding:1.1em 1em!important;
-  }
-
-  #mainNav.navbar-shrink .navbar-brand {
-    font-size:1.25em;
-    padding:12px 0;
-  }
-}
-
 header.masthead {
   text-align:center;
   color:#fff;
   background-color:#353646;
   background-image: url('../img/superman.jpg');
   background-attachment:scroll;
-  background-position:top right;
+  background-position: center;
   background-size:cover;
-  padding: 150px 0;
   padding-bottom: 30px;
+  height: 400px;
+  margin-top: 60px;
 }
 
 header.masthead .intro-text {
@@ -192,29 +149,11 @@ header.masthead .intro-text .intro-lead-in {
 }
 
 header.masthead .intro-text .intro-heading {
-  font-size:50px;
+  font-size:35px;
   font-weight:700;
   line-height:50px;
   margin-bottom:25px;
   font-family:Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-}
-
-@media (min-width:768px){
-  header.masthead .intro-text .intro-lead-in {
-    font-size:40px;
-    font-style:italic;
-    line-height:40px;
-    margin-bottom:25px;
-    font-family:'Droid Serif',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-  }
-
-  header.masthead .intro-text .intro-heading {
-    font-size:75px;
-    font-weight:700;
-    line-height:75px;
-    margin-bottom:50px;
-    font-family:Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-  }
 }
 
 .service-heading {
@@ -291,12 +230,6 @@ header.masthead .intro-text .intro-heading {
   z-index:2;
 }
 
-@media (min-width:767px){
-  #portfolio .portfolio-item {
-    margin:0 0 30px;
-  }
-}
-
 .portfolio-modal {
   padding-right:0!important;
 }
@@ -307,12 +240,12 @@ header.masthead .intro-text .intro-heading {
 }
 
 .portfolio-modal .modal-content {
-  padding:100px 0;
+  padding:60px 0;
   text-align:center;
 }
 
 .portfolio-modal .modal-content h2 {
-  font-size:2em;
+  font-size: 14px;
   margin-bottom:15px;
 }
 
@@ -342,10 +275,9 @@ header.masthead .intro-text .intro-heading {
 
 .portfolio-modal .close-modal {
   position:absolute;
-  top:25px;
+  top:20px;
   right:25px;
-  width:75px;
-  height:75px;
+  width:50px;
   cursor:pointer;
   background-color:transparen;
 }
@@ -357,7 +289,7 @@ header.masthead .intro-text .intro-heading {
 .portfolio-modal .close-modal .lr {
   z-index:1051;
   width:1px;
-  height:75px;
+  height:40px;
   margin-left:35px;
   -webkit-transform:rotate(45deg);
   transform:rotate(45deg);
@@ -367,7 +299,7 @@ header.masthead .intro-text .intro-heading {
 .portfolio-modal .close-modal .lr .rl {
   z-index:1052;
   width:1px;
-  height:75px;
+  height:40px;
   -webkit-transform:rotate(90deg);
   transform:rotate(90deg);
   background-color:#212529;
@@ -383,7 +315,7 @@ header.masthead .intro-text .intro-heading {
   position:absolute;
   top:0;
   bottom:0;
-  left:40px;
+  left:50px;
   width:2px;
   margin-left:-1.5px;
   content:'';
@@ -408,8 +340,7 @@ header.masthead .intro-text .intro-heading {
 .timeline > li .timeline-panel {
   position:relative;
   float:right;
-  width:100%;
-  padding:0 20px 0 60px;
+  width:70%;
   text-align:left;
 }
 
@@ -431,13 +362,11 @@ header.masthead .intro-text .intro-heading {
   position:absolute;
   z-index:100;
   left:0;
-  width:80px;
-  height:80px;
+  width:100px;
+  height:100px;
   margin-left:0;
   text-align:center;
   color:#fff;
-  /* border:7px solid #e9ecef;
-  border-radius:100%; */
   background-color:#fff;
 }
 
@@ -449,8 +378,8 @@ header.masthead .intro-text .intro-heading {
 
 .timeline> li.timeline-inverted >.timeline-panel {
   float:right;
-  padding:0 20px 0 60px;
   text-align:left;
+  margin-top: 10px;
 }
 
 .timeline> li.timeline-inverted >.timeline-panel:before {
@@ -474,105 +403,19 @@ header.masthead .intro-text .intro-heading {
 .timeline .timeline-heading h4 {
   margin-top:0;
   color:inherit;
+  font-size: 18px;
 }
 
 .timeline .timeline-heading h4.subheading {
   text-transform:none;
 }
 
+.timeline-body {
+  font-size: 11px;
+}
+
 .timeline .timeline-body > p,.timeline .timeline-body > ul {
   margin-bottom:0;
-}
-
-@media (min-width:768px){
-  .timeline:before {
-    left:50%;
-  }
-
-  .timeline > li {
-    min-height:180px;
-    margin-bottom:100px;
-  }
-
-  .timeline > li .timeline-panel {
-    float:left;
-    width:41%;
-    padding:0 20px 20px 30px;
-    text-align:right;
-  }
-
-  .timeline > li .timeline-image {
-    left:50%;
-    width:100px;
-    height:100px;
-    margin-left:-50px;
-  }
-
-  .timeline > li .timeline-image h4 {
-    font-size:13px;
-    line-height:18px;
-    margin-top:16px;
-  }
-
-  .timeline > li.timeline-inverted >.timeline-panel {
-    float:right;
-    padding:0 30px 20px 20px;
-    text-align:left;
-  }
-}
-
-@media (min-width:992px){
-  .timeline > li {
-    min-height:150px;
-  }
-
-  .timeline > li .timeline-panel {
-    padding:0 20px 20px;
-  }
-
-  .timeline > li .timeline-image {
-    width:150px;
-    height:150px;
-    margin-left:-75px;
-  }
-
-  .timeline > li .timeline-image h4 {
-    font-size:18px;
-    line-height:26px;
-    margin-top:30px;
-  }
-
-  .timeline > li.timeline-inverted >.timeline-panel {
-    padding:0 20px 20px;
-  }
-}
-
-@media (min-width:1200px){
-  section {
-    padding-bottom: 350px;
-  }
-
-  .timeline > li {
-    min-height:170px;
-  }
-
-  .timeline > li .timeline-panel {
-    padding:0 20px 20px 60px;
-  }
-
-  .timeline > li .timeline-image {
-    width:170px;
-    height:170px;
-    margin-left:-85px;
-  }
-
-  .timeline> li .timeline-image h4 {
-    margin-top:40px;
-  }
-
-  .timeline > li.timeline-inverted >.timeline-panel {
-    padding:0 100px 20px 20px;
-  }
 }
 
 .team-member {
@@ -725,12 +568,581 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
 }
 
 .img-fluid {
-  width: 170px;
+  width: 100px;
   background-color: #F8F9FA;
 }
 
+.thirdStep {
+  position: absolute;
+}
+
+.third-panel {
+  position: absolute;
+  left: 30%;
+}
+
+.fourth {
+  margin-top: 150px;
+}
+
+.fourthStep {
+  position: absolute;
+}
+
+.fourth-panel {
+  position: absolute;
+  left: 30%;
+}
+
+.fifth {
+  margin-top: 200px;
+}
+
+.fifthStep {
+  position: absolute;
+  margin-top: 10px;
+}
+
+.fifth-panel {
+  position: absolute;
+  left: 30%;
+}
+
+.sixth {
+  margin-top: 100px;
+}
+
+.sixthStep {
+  position: absolute;
+}
+
+.sixth-panel {
+  position: absolute;
+  left: 30%;
+}
+
+.heaven {
+  margin-bottom: 20px;
+}
+
+.seventh {
+  margin-top: 200px;
+}
+
+.seventhStep {
+  position: absolute;
+}
+
+.eighth {
+  margin-top: 150px;
+}
+
+.eighthStep {
+  position: absolute;
+}
+
+.faqrow {
+  flex-direction: column;
+  align-items: center;
+}
+
+.faqrow a {
+  text-decoration: none;
+}
+
+.faq-content > span:hover {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.faq-content {
+  color: #353645;
+}
+
+.faq-content span {
+  font-size: 15px;
+}
+
+.portfolio-item {
+  box-shadow: 1px 1px 4px 2px #BBBBBB;
+  border-radius: 3px;
+  text-align: left;
+  width: 90%;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+
+#about {
+  padding-bottom: 150px;
+}
+
+#team {
+  padding-bottom: 120px;
+}
+
+.email {
+  color: #6c757d;
+}
+
+.answer {
+  font-size: 13px;
+  margin-top: 40px;
+}
+
+.introduce {
+  color: #fff;
+}
+
+.mainbox {
+  font-size: 11px;
+  text-align: center;
+}
+
+.mainbox > h1{
+  color: #353646;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.introduce-detail{
+  color: #fff;
+  font-size: 13px;
+  margin-bottom: 40px;
+}
+
+#services {
+  padding-bottom: 130px;
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  header.masthead .intro-text .intro-lead-in {
+    font-size:40px;
+    font-style:italic;
+    line-height:40px;
+    margin-bottom:25px;
+    font-family:'Droid Serif',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  }
+
+  header.masthead .intro-text .intro-heading {
+    font-size:65px;
+    font-weight:700;
+    line-height:75px;
+    margin-bottom:50px;
+    font-family:Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  }
+
+  #portfolio .portfolio-item {
+    margin:0 0 30px;
+  }
+
+  section {
+    padding:150px 0;
+  }
+
+  .introduce-detail{
+    font-size: 17px;
+  }
+
+  .mainbox {
+    font-size: 15px;
+  }
+
+  .mainbox > h1 {
+    font-size: 25px;
+  }
+
+  .timeline:before {
+    left:50%;
+  }
+
+  .timeline > li {
+    min-height:110px;
+    margin-bottom:100px;
+  }
+
+  .timeline > li .timeline-panel {
+    float:left;
+    width:41%;
+    padding:0;
+    text-align:right;
+  }
+
+  .timeline > li .timeline-image {
+    left:50%;
+    width:100px;
+    height:100px;
+    margin-left:-50px;
+  }
+
+  .timeline > li .timeline-image h4 {
+    font-size:13px;
+    line-height:18px;
+    margin-top:16px;
+  }
+
+  .timeline > li.timeline-inverted >.timeline-panel {
+    float:right;
+    padding:0 30px 20px 20px;
+    text-align:left;
+  }
+
+  .portfolio-item {
+    width: 70%;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+  }
+
+  #portfolio {
+    padding-bottom: 350px;
+  }
+
+  .mastheadImg {
+    margin-top: 15px;
+  }
+
+  .timeline-heading > h4 {
+    font-size: 20px;
+  }
+
+  .first-panel > .timeline-body {
+    font-size: 12px;
+  }
+
+  .second-panel > .timeline-body {
+    font-size: 12px;
+  }
+
+  .thirdStep, .fourthStep, .sixthStep, .eighthStep {
+    position: absolute;
+    left: 35%;
+  }
+
+  .fourth {
+    margin-top: 300px;
+  }
+
+  .fifthStep{
+    position: absolute;
+    left: 37%;
+  }
+
+  .seventhStep {
+    position: absolute;
+    left: 36%;
+  }
+
+  .third-panel {
+    position: absolute;
+    width: 36%;
+    left: -4%;
+    text-align: right;
+  }
+
+  .third-panel > .timeline-body {
+    font-size: 11.5px;
+  }
+
+  .fifth {
+    margin-top: 400px;
+  }
+
+  .fifth-panel{
+    position: absolute;
+    width: 38%;
+    left: -4%;
+    text-align: right;
+  }
+
+  .fifth-panel > .timeline-body {
+    font-size: 14px;
+  }
+
+  .fourth-panel, .sixth-panel {
+    position: absolute;
+    width: 39%;
+    right: -5%;
+  }
+
+  .sixth-panel > .timeline-body {
+    font-size: 14px;
+  }
+
+  .fourth-panel > .timeline-body {
+    font-size: 11px;
+  }
+
+  .seventh {
+    margin-top: 320px;
+  }
+
+  .eighth {
+    margin-top: 250px;
+  }
+
+  .eighth-text {
+    font-size: 15px;
+  }
+
+  .nineth-text {
+    font-size: 12.7px;
+  }
+
+  .thirdStep > img {
+    width: 200px;
+  }
+
+  .fourthStep > img {
+    width: 200px;
+  }
+
+  .fifthStep > img {
+    width: 170px;
+  }
+
+  .sixthStep > img {
+    width: 200px;
+  }
+
+  .seventhStep > img {
+    width: 200px;
+  }
+
+  .eighthStep > img {
+    width: 200px;
+  }
+
+  .faq-content span {
+    font-size: 17px;
+  }
+
+  .faq-content > span:hover {
+    font-size: 18px;
+  }
+
+  .portfolio-modal .modal-content {
+    padding: 65px 0;
+  }
+
+  .portfolio-modal .modal-content h2 {
+    font-size: 25px;
+  }
+
+  .portfolio-modal .close-modal {
+    top: 20px;
+    width: 60px;
+  }
+
+  .portfolio-modal .close-modal .lr {
+    height: 45px;
+  }
+
+  .portfolio-modal .close-modal .lr .rl {
+    height: 45px;
+  }
+
+  .answer {
+    font-size: 18px;
+  }
+
+  .team-member img {
+    width: 160px;
+    height: 160px;
+  }
+
+  #team {
+    padding-bottom: 60px;
+  }
+
+  .email, .copyright {
+    font-size: 15px;
+  }
+
+  .row {
+    align-items: center;
+  }
+}
+
+@media (min-width:992px) and (max-width: 1199px){
+  #mainNav {
+    -webkit-transition:padding-top .3s,padding-bottom .3s;transition:padding-top .3s,padding-bottom .3s;
+    border:none;
+  }
+
+  #mainNav .navbar-brand {
+    font-size:1.75em;
+    -webkit-transition:all .3s;transition:all .3s;
+  }
+
+  #mainNav .navbar-nav .nav-item .nav-link {
+    padding:1.1em 1em!important;
+  }
+
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size:1.25em;
+    padding:12px 0;
+  }
+
+  .portfolio-item {
+    width: 55%;
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+  }
+
+  .portfolio-modal .modal-content h2 {
+    font-size: 1.6em;
+  }
+
+  #portfolio {
+    padding-bottom: 400px;
+  }
+
+  .mainbox > h1 {
+    font-size: 30px;
+  }
+
+  .timeline-body {
+    font-size: 15px;
+  }
+
+  .thirdStep, .fourthStep, .sixthStep, .eighthStep {
+    position: absolute;
+    left: 37%;
+  }
+
+  .fifthStep {
+    position: absolute;
+    left: 39%;
+  }
+
+  .seventhStep {
+    position: absolute;
+    left: 38%;
+  }
+
+  .third-panel, .fifth-panel{
+    position: absolute;
+    width: 35%;
+    left: -1%;
+    text-align: right;
+  }
+
+  .fourth-panel, .sixth-panel {
+    position: absolute;
+    width: 36%;
+    right: -1%;
+  }
+
+  .sixth-panel > .timeline-body {
+    font-size: 14px;
+  }
+
+  .fourth-panel > .timeline-body {
+    font-size: 13px;
+  }
+
+  .thirdStep > img {
+    width: 230px;
+  }
+
+  .fourthStep > img {
+    width: 230px;
+  }
+
+  .fifthStep > img {
+    width: 200px;
+  }
+
+  .sixthStep > img {
+    width: 230px;
+  }
+
+  .seventhStep > img {
+    width: 230px;
+  }
+
+  .eighthStep > img {
+    width: 230px;
+  }
+
+  .timeline > li {
+    min-height:150px;
+  }
+
+  .timeline > li .timeline-panel {
+    padding:0 20px 20px;
+  }
+
+  .timeline > li .timeline-image {
+    width:150px;
+    height:150px;
+    margin-left:-75px;
+  }
+
+  .timeline > li .timeline-image h4 {
+    font-size:18px;
+    line-height:26px;
+    margin-top:30px;
+  }
+
+  .timeline > li.timeline-inverted >.timeline-panel {
+    padding:0 20px 20px;
+  }
+}
 
 @media (min-width:1200px){
+  section {
+    padding-bottom: 350px;
+  }
+
+  .portfolio-item {
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .portfolio-modal .modal-content h2 {
+    font-size: 2em;
+  }
+
+  #mainNav .navbar-nav .nav-item .nav-link {
+    margin: 0 10px;
+  }
+
+  .timeline > li {
+    min-height:170px;
+  }
+
+  .timeline > li .timeline-panel {
+    padding:0 20px 20px 60px;
+  }
+
+  .timeline > li .timeline-image {
+    width:170px;
+    height:170px;
+    margin-left:-85px;
+  }
+
+  .timeline> li .timeline-image h4 {
+    margin-top:40px;
+  }
+
+  .timeline > li.timeline-inverted >.timeline-panel {
+    padding:0 100px 20px 20px;
+  }
+
   .thirdStep, .fourthStep, .sixthStep, .eighthStep {
     position: absolute;
     left: 37%;
@@ -749,7 +1161,7 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
 
   .fourth-panel, .sixth-panel {
     position: absolute;
-    width: 35%;
+    width: 36%;
     right: 0;
   }
 
@@ -776,229 +1188,4 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
   .eighthStep > img {
     width: 280px;
   }
-}
-
-@media (min-width:992px) and (max-width: 1199px){
-  .thirdStep, .fourthStep, .sixthStep, .eighthStep {
-    position: absolute;
-    left: 35%;
-  }
-
-  .fifthStep {
-    position: absolute;
-    left: 36%;
-  }
-
-  .seventhStep {
-    position: absolute;
-    left: 35%;
-  }
-
-  .third-panel, .fifth-panel{
-    position: absolute;
-    width: 33%;
-    left: -1%;
-  }
-
-  .fourth-panel, .sixth-panel {
-    position: absolute;
-    width: 33%;
-    right: -1%;
-  }
-
-  .thirdStep > img {
-    width: 280px;
-  }
-
-  .fourthStep > img {
-    width: 280px;
-  }
-
-  .fifthStep > img {
-    width: 250px;
-  }
-
-  .sixthStep > img {
-    width: 280px;
-  }
-
-  .seventhStep > img {
-    width: 280px;
-  }
-
-  .eighthStep > img {
-    width: 280px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px){
-  .mastheadImg {
-    margin-top: 15px;
-  }
-
-  .thirdStep, .fourthStep, .sixthStep, .eighthStep {
-    position: absolute;
-    left: 32%;
-  }
-
-  .fifthStep{
-    position: absolute;
-    left: 35%;
-  }
-
-  .seventhStep {
-    position: absolute;
-    left: 32%;
-  }
-
-  .third-panel, .fifth-panel{
-    position: absolute;
-    width: 34%;
-    left: -4%;
-    text-align: right;
-  }
-
-  .fourth-panel, .sixth-panel {
-    position: absolute;
-    width: 34%;
-    right: -5%;
-  }
-
-  .thirdStep > img {
-    width: 250px;
-  }
-
-  .fourthStep > img {
-    width: 250px;
-  }
-
-  .fifthStep > img {
-    width: 220px;
-  }
-
-  .sixthStep > img {
-    width: 250px;
-  }
-
-  .seventhStep > img {
-    width: 250px;
-  }
-
-  .eighthStep > img {
-    width: 250px;
-  }
-}
-
-
-.fourth {
-  margin-top: 360px;
-}
-
-.fifth {
-  margin-top: 450px;
-}
-
-.heaven {
-  margin-bottom: 20px;
-}
-
-.seventh {
-  margin-top: 370px;
-}
-
-.eighth {
-  margin-top: 300px;
-}
-
-.faqrow {
-  flex-direction: column;
-  align-items: center;
-}
-
-.faqrow a {
-  text-decoration: none;
-}
-
-.faq-content > span:hover {
-  font-weight: bold;
-  font-size: 21px;
-}
-
-.faq-content {
-  color: #353645;
-}
-
-.faq-content span {
-  font-size: 20px;
-}
-
-.portfolio-item {
-  box-shadow: 1px 1px 4px 2px #BBBBBB;
-  height: 50px;
-  border-radius: 3px;
-  text-align: left;
-  line-height: 50px;
-  padding-left: 20px;
-  margin-bottom: 20px;
-}
-
-@media (min-width: 992px){
-  .portfolio-item {
-    width: 55%;
-  }
-
-  #portfolio {
-    padding-bottom: 400px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px){
-  .portfolio-item {
-    width: 70%;
-  }
-
-  #portfolio {
-    padding-bottom: 350px;
-  }
-}
-
-#about {
-  padding-bottom: 150px;
-}
-
-#team {
-  padding-bottom: 120px;
-}
-
-.email {
-  color: #6c757d;
-}
-
-.answer {
-  font-size: 20px;
-  margin-top: 40px;
-}
-
-.introduce {
-  color: #fff;
-}
-
-.mainbox {
-  font-size: 18px;
-  text-align: center;
-}
-.mainbox > h1{
-  color: #353646;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.introduce-detail{
-  color: #fff;
-  font-size: 20px;
-  margin-bottom: 60px;
-}
-
-#services {
-  padding-bottom: 180px;
 }
