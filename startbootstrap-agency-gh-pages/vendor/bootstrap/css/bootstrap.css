@@ -6569,10 +6569,6 @@ button.bg-dark:focus {
   border-bottom-left-radius: 0.25rem !important;
 }
 
-.rounded-circle {
-  border-radius: 50% !important;
-}
-
 .rounded-pill {
   border-radius: 50rem !important;
 }
