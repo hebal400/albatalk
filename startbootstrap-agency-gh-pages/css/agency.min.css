@@ -752,12 +752,41 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
     width: 35%;
     right: 0;
   }
+
+  .thirdStep > img {
+    width: 280px;
+  }
+
+  .fourthStep > img {
+    width: 280px;
+  }
+
+  .fifthStep > img {
+    width: 250px;
+  }
+
+  .sixthStep > img {
+    width: 280px;
+  }
+
+  .seventhStep > img {
+    width: 280px;
+  }
+
+  .eighthStep > img {
+    width: 280px;
+  }
 }
 
 @media (min-width:992px) and (max-width: 1199px){
   .thirdStep, .fourthStep, .sixthStep, .eighthStep {
     position: absolute;
     left: 35%;
+  }
+
+  .fifthStep {
+    position: absolute;
+    left: 36%;
   }
 
   .seventhStep {
@@ -775,6 +804,30 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
     position: absolute;
     width: 33%;
     right: -1%;
+  }
+
+  .thirdStep > img {
+    width: 280px;
+  }
+
+  .fourthStep > img {
+    width: 280px;
+  }
+
+  .fifthStep > img {
+    width: 250px;
+  }
+
+  .sixthStep > img {
+    width: 280px;
+  }
+
+  .seventhStep > img {
+    width: 280px;
+  }
+
+  .eighthStep > img {
+    width: 280px;
   }
 }
 
@@ -810,50 +863,50 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
     width: 32%;
     right: -5%;
   }
-}
 
-.thirdStep > img {
-  width: 280px;
+  .thirdStep > img {
+    width: 280px;
+  }
+
+  .fourthStep > img {
+    width: 280px;
+  }
+
+  .fifthStep > img {
+    width: 250px;
+  }
+
+  .sixthStep > img {
+    width: 280px;
+  }
+
+  .seventhStep > img {
+    width: 280px;
+  }
+
+  .eighthStep > img {
+    width: 280px;
+  }
 }
 
 .fourth {
   margin-top: 360px;
 }
 
-.fourthStep > img {
-  width: 280px;
-}
-
 .fifth {
   margin-top: 450px;
-}
-
-.fifthStep > img {
-  width: 250px;
 }
 
 .heaven {
   margin-bottom: 20px;
 }
 
-.sixthStep > img {
-  width: 280px;
-}
-
 .seventh {
   margin-top: 370px;
 }
 
-.seventhStep > img {
-  width: 280px;
-}
-
 .eighth {
   margin-top: 300px;
-}
-
-.eighthStep > img {
-  width: 280px;
 }
 
 .faqrow {
