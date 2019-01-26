@@ -166,7 +166,7 @@ img::-moz-selection {
 header.masthead {
   text-align:center;
   color:#fff;
-  background-color:#353645;
+  background-color:#353646;
   background-image: url('../img/superman.jpg');
   background-attachment:scroll;
   background-position:top right;
@@ -200,9 +200,6 @@ header.masthead .intro-text .intro-heading {
 }
 
 @media (min-width:768px){
-  header.masthead .intro-text {
-  }
-
   header.masthead .intro-text .intro-lead-in {
     font-size:40px;
     font-style:italic;
@@ -493,7 +490,7 @@ header.masthead .intro-text .intro-heading {
   }
 
   .timeline > li {
-    min-height:100px;
+    min-height:180px;
     margin-bottom:100px;
   }
 
@@ -732,19 +729,91 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
   background-color: #F8F9FA;
 }
 
-.thirdStep, .fourthStep, .sixthStep, .eighthStep {
-  position: absolute;
-  left: 37%;
+
+@media (min-width:1200px){
+  .thirdStep, .fourthStep, .sixthStep, .eighthStep {
+    position: absolute;
+    left: 37%;
+  }
+
+  .fifthStep, .seventhStep {
+    position: absolute;
+    left: 38%;
+  }
+
+  .third-panel, .fifth-panel {
+    position: absolute;
+    width: 34%;
+    text-align: right;
+  }
+
+  .fourth-panel, .sixth-panel {
+    position: absolute;
+    width: 35%;
+    right: 0;
+  }
+}
+
+@media (min-width:992px) and (max-width: 1199px){
+  .thirdStep, .fourthStep, .sixthStep, .eighthStep {
+    position: absolute;
+    left: 35%;
+  }
+
+  .seventhStep {
+    position: absolute;
+    left: 35%;
+  }
+
+  .third-panel, .fifth-panel{
+    position: absolute;
+    width: 33%;
+    left: -1%;
+  }
+
+  .fourth-panel, .sixth-panel {
+    position: absolute;
+    width: 33%;
+    right: -1%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .mastheadImg {
+    margin-top: 15px;
+  }
+
+  .thirdStep, .fourthStep, .sixthStep, .eighthStep {
+    position: absolute;
+    left: 30%;
+  }
+
+  .fifthStep{
+    position: absolute;
+    left: 33%;
+  }
+
+  .seventhStep {
+    position: absolute;
+    left: 30%;
+  }
+
+  .third-panel, .fifth-panel{
+    position: absolute;
+    width: 32%;
+    left: -4%;
+    text-align: right;
+  }
+
+  .fourth-panel, .sixth-panel {
+    position: absolute;
+    width: 32%;
+    right: -5%;
+  }
 }
 
 .thirdStep > img {
   width: 280px;
-}
-
-.third-panel, .fifth-panel {
-  position: absolute;
-  width: 34%;
-  text-align: right;
 }
 
 .fourth {
@@ -755,19 +824,8 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
   width: 280px;
 }
 
-.fourth-panel, .sixth-panel {
-  position: absolute;
-  width: 35%;
-  right: 0;
-}
-
 .fifth {
   margin-top: 450px;
-}
-
-.fifthStep, .seventhStep {
-  position: absolute;
-  left: 38%;
 }
 
 .fifthStep > img {
@@ -822,13 +880,24 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
 
 .portfolio-item {
   box-shadow: 1px 1px 4px 2px #BBBBBB;
-  width: 55%;
   height: 50px;
   border-radius: 3px;
   text-align: left;
   line-height: 50px;
   padding-left: 20px;
   margin-bottom: 20px;
+}
+
+@media (min-width: 992px){
+  .portfolio-item {
+    width: 55%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .portfolio-item {
+    width: 70%;
+  }
 }
 
 #about {
@@ -856,14 +925,13 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
   font-size: 18px;
   text-align: center;
 }
-
-.mainbox > h1 {
-  color: #353645;
+.mainbox > h1{
+  color: #353646;
   text-align: center;
   margin-bottom: 30px;
 }
 
-.introduce-detail {
+.introduce-detail{
   color: #fff;
   font-size: 20px;
   margin-bottom: 60px;
