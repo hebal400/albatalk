@@ -751,6 +751,14 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
   right: 0;
 }
 
+@media (min-width:992px){
+  .fourth-panel, .sixth-panel {
+    position: absolute;
+    width: 35%;
+    right: -5%;
+  }
+}
+
 .fifth {
   margin-top: 450px;
 }
