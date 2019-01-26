@@ -722,7 +722,7 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
   background-color: #F8F9FA;
 }
 
-.thirdStep, .fourthStep, .sixthStep {
+.thirdStep, .fourthStep, .sixthStep, .eighthStep {
   position: absolute;
   left: 37%;
 }
@@ -777,5 +777,13 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
 }
 
 .seventhStep > img {
+  width: 280px;
+}
+
+.eighth {
+  margin-top: 300px;
+}
+
+.eighthStep > img {
   width: 280px;
 }
