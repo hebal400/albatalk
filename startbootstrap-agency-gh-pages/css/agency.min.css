@@ -42,7 +42,7 @@ section h2.section-heading {
 section h3.section-subheading {
   font-size:16px;
   font-weight:400;
-  ont-style:italic;
+  font-style:italic;
   margin-bottom:75px;
   text-transform:none;
   font-family:'Droid Serif',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
@@ -113,7 +113,7 @@ img::-moz-selection {
   text-transform:uppercase;
   color:#fff;
   border:0;
-  background-color:#fed136;
+  background-color:#353646;
   font-family:Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
 }
 
@@ -166,9 +166,11 @@ header.masthead {
   text-align:center;
   color:#fff;
   background-color:#DCDCDC;
+  background-image: url('../img/header-bg.jpg');
   background-attachment:scroll;
   background-position:center center;
   background-size:cover;
+  padding: 150px 0;
 }
 
 header.masthead .intro-text {
@@ -288,7 +290,7 @@ header.masthead .intro-text .intro-heading {
   z-index:2;
 }
 
-@media (min-width:767px){
+@media (min-width:768px){
   #portfolio .portfolio-item {
     margin:0 0 30px;
   }
@@ -309,7 +311,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .portfolio-modal .modal-content h2 {
-  font-size:3em;
+  font-size:2em;
   margin-bottom:15px;
 }
 
@@ -545,6 +547,10 @@ header.masthead .intro-text .intro-heading {
 }
 
 @media (min-width:1200px){
+  section{
+    padding-bottom: 350px;
+  }
+
   .timeline > li {
     min-height:170px;
   }
@@ -727,6 +733,63 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
   left: 37%;
 }
 
+@media (min-width:992px) and (max-width: 1199px){
+  .thirdStep, .fourthStep, .sixthStep, .eighthStep {
+    position: absolute;
+    left: 35%;
+  }
+
+  .seventhStep {
+    position: absolute;
+    left: 35%;
+  }
+
+  .third-panel, .fifth-panel{
+    position: absolute;
+    width: 33%;
+    left: -1%;
+  }
+
+  .fourth-panel, .sixth-panel {
+    position: absolute;
+    width: 33%;
+    right: -1%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .mastheadImg {
+    margin-top: 15px;
+  }
+
+  .thirdStep, .fourthStep, .sixthStep, .eighthStep {
+    position: absolute;
+    left: 30%;
+  }
+
+  .fifthStep{
+    position: absolute;
+    left: 33%;
+  }
+
+  .seventhStep {
+    position: absolute;
+    left: 35%;
+  }
+
+  .third-panel, .fifth-panel{
+    position: absolute;
+    width: 30%;
+    left: -5%;
+  }
+
+  .fourth-panel, .sixth-panel {
+    position: absolute;
+    width: 30%;
+    right: -5%;
+  }
+}
+
 .thirdStep > img {
   width: 280px;
 }
@@ -749,14 +812,6 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
   position: absolute;
   width: 35%;
   right: 0;
-}
-
-@media (min-width:992px){
-  .fourth-panel, .sixth-panel {
-    position: absolute;
-    width: 35%;
-    right: -5%;
-  }
 }
 
 .fifth {
@@ -794,4 +849,54 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
 
 .eighthStep > img {
   width: 280px;
+}
+
+.faqrow {
+  flex-direction: column;
+  align-items: center;
+}
+
+.faqrow a {
+  text-decoration: none;
+}
+
+.faq-content > span:hover {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.faq-content {
+  color: #353645;
+}
+
+.faq-content span {
+  font-size: 20px;
+}
+
+.portfolio-item {
+  box-shadow: 1px 1px 4px 2px #BBBBBB;
+  width: 55%;
+  height: 50px;
+  border-radius: 3px;
+  text-align: left;
+  line-height: 50px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+#about {
+  padding-bottom: 150px;
+}
+
+#team {
+  padding-bottom: 120px;
+}
+
+.email {
+  color: #6c757d;
+}
+
+.answer {
+  font-size: 20px;
+  margin-top: 40px;
 }
