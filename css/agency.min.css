@@ -83,7 +83,6 @@ img::-moz-selection {
 
 #mainNav {
   background-color:#212529;
-  height: 65px;
 }
 
 #mainNav .navbar-toggler {
@@ -546,9 +545,6 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
 
 #mainNav {
   background-color: #fff;
-  padding-bottom: 0;
-  padding-top: 0;
-  height: 65px;
 }
 
 .container > iframe{
