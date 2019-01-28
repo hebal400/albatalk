@@ -49,9 +49,9 @@ section h3.section-subheading {
 }
 
 .btn-primary:active,.btn-primary:focus,.btn-primary:hover {
-  background-color:#fec810!important;
-  border-color:#fec810!important;
-  color:#fff;
+  background-color:#fff;
+  border-color:#fff;
+  color:#353645;
 }
 
 .btn-primary:active,.btn-primary:focus {
@@ -83,6 +83,7 @@ img::-moz-selection {
 
 #mainNav {
   background-color:#212529;
+  height: 65px;
 }
 
 #mainNav .navbar-toggler {
@@ -101,10 +102,6 @@ img::-moz-selection {
   font-family:'Kaushan Script',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
 }
 
-#mainNav .navbar-brand.active,#mainNav .navbar-brand:active,#mainNav .navbar-brand:focus,#mainNav .navbar-brand:hover {
-  color:#fec503;
-}
-
 #mainNav .navbar-nav .nav-item .nav-link {
   font-size:90%;
   font-weight:400;
@@ -119,11 +116,14 @@ img::-moz-selection {
   font-weight: bold;
 }
 
+.navbar.navbar-expand-lg.navbar-dark.fixed-top.navbar-shrink {
+  border-bottom: 1px solid lightgray;
+}
+
 header.masthead {
   text-align:center;
   color:#fff;
   background-color:#353646;
-  background-image: url('../img/superman.jpg');
   background-attachment:scroll;
   background-position:top right;
   background-size:cover;
@@ -547,10 +547,8 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
 #mainNav {
   background-color: #fff;
   padding-bottom: 0;
-}
-
-#mainNav > .container {
-  border-bottom: 1px solid lightgray;
+  padding-top: 0;
+  height: 65px;
 }
 
 .container > iframe{
@@ -660,7 +658,7 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
 .mainbox > h1{
   color: #353646;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .introduce-detail{
@@ -674,6 +672,11 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
 }
 
 @media (min-width: 1px) and (max-width: 767px) {
+  .navbarLogo {
+    width: 120px;
+    height: 30px;
+  }
+
   .aaa {
     display: flex;
     align-items: center;
@@ -824,9 +827,24 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
     font-size: 13px;
     margin-top: 40px;
   }
+
+  .second-body {
+    text-align: right;
+    width: 65%;
+  }
+
+  .team-member img {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px){
+  .navbarLogo {
+    width: 140px;
+    height: 35px;
+  }
+
   header.masthead .intro-text .intro-lead-in {
     font-size:40px;
     font-style:italic;
@@ -878,11 +896,19 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
   }
 
   .timeline-body {
-    width: 70%;
+    width: 72%;
+  }
+
+  .timeline-body > h4 {
+    font-size: 1.7em;
+  }
+
+  .text-muted {
+    font-size: 0.7em;
   }
 
   .second-body {
-    width: 71%;
+    width: 73%;
     text-align: right;
   }
 
@@ -930,10 +956,6 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
     margin-bottom: 15px;
   }
 
-  #portfolio {
-    padding-bottom: 350px;
-  }
-
   .mastheadImg {
     margin-top: 15px;
   }
@@ -959,10 +981,6 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
   .seventhStep {
     position: absolute;
     left: 36%;
-  }
-
-  .eighth-text {
-    font-size: 15px;
   }
 
   .nineth-text {
@@ -1017,6 +1035,15 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
 }
 
 @media (min-width:992px) and (max-width: 1199px){
+  .navbarLogo {
+    width: 160px;
+    height: 40px;
+  }
+
+  header.masthead .intro-text .intro-heading {
+    font-size: 65px;
+    margin-bottom: 60px;
+  }
   #mainNav {
     -webkit-transition:padding-top .3s,padding-bottom .3s;transition:padding-top .3s,padding-bottom .3s;
     border:none;
@@ -1075,10 +1102,6 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
     font-size: 1.6em;
   }
 
-  #portfolio {
-    padding-bottom: 400px;
-  }
-
   .mainbox > h1 {
     font-size: 30px;
   }
@@ -1086,6 +1109,14 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
   .timeline-body {
     width: 78%;
     font-size: 15px;
+  }
+
+  .timeline-body > h4 {
+    font-size: 2rem;
+  }
+
+  .text-muted {
+    font-size: 1em;
   }
 
   .thirdStep, .fourthStep, .sixthStep, .eighthStep {
@@ -1153,8 +1184,9 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
 }
 
 @media (min-width:1200px){
-  section {
-    padding-bottom: 350px;
+  header.masthead .intro-text .intro-heading {
+    font-size: 70px;
+    margin-bottom: 60px;
   }
 
   header.masthead .intro-text {
@@ -1233,11 +1265,28 @@ ul .social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li
   }
 
   .second-body {
-    width: 76%;
+    width: 79%;
     text-align: right;
   }
 
+  .second-body > h4 {
+    font-size: 2.2rem;
+  }
+
   .timeline-body {
-    width: 75%;
+    width: 77%;
+  }
+
+  .timeline-body > h4 {
+    font-size: 2.2rem;
+  }
+
+  .text-muted {
+    font-size: 1.2em;
+  }
+
+  .navbarLogo {
+    width: 160px;
+    height: 40px;
   }
 }
